@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aTS-YE-TxC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contacts-->
+        <scene sceneID="UAL-Th-Xsx">
+            <objects>
+                <tableViewController id="tsM-WZ-S20" customClass="ContactsListTableViewController" customModule="SampleApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kLs-C0-Wkf">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="tsM-WZ-S20" id="wgo-m5-6OO"/>
+                            <outlet property="delegate" destination="tsM-WZ-S20" id="pnA-yg-dTG"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="LeZ-7c-Co4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tKl-5R-dkx">
+                            <connections>
+                                <segue destination="8vH-5b-fjP" kind="show" id="JeO-Mv-m7M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kh4-E0-CIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343" y="161"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="bvk-Xz-mTg">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="ifh-qn-FSo" customClass="ContactViewController" customModule="SampleApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1mt-LX-i4o"/>
+                        <viewControllerLayoutGuide type="bottom" id="MHh-cb-hbj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0BO-3N-U4q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-vN-d1A">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="X1x-gC-bwZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgP-et-blh">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="HgP-et-blh" firstAttribute="centerX" secondItem="X1x-gC-bwZ" secondAttribute="centerX" id="OEr-YD-Rvx"/>
+                                        <constraint firstAttribute="bottom" secondItem="HgP-et-blh" secondAttribute="bottom" id="Unq-xJ-BOn"/>
+                                        <constraint firstItem="HgP-et-blh" firstAttribute="leading" secondItem="X1x-gC-bwZ" secondAttribute="leading" id="UvO-qw-euR"/>
+                                        <constraint firstAttribute="trailing" secondItem="HgP-et-blh" secondAttribute="trailing" id="WtU-8A-4I1"/>
+                                        <constraint firstItem="HgP-et-blh" firstAttribute="centerY" secondItem="X1x-gC-bwZ" secondAttribute="centerY" id="oIv-cK-XnF"/>
+                                        <constraint firstItem="HgP-et-blh" firstAttribute="top" secondItem="X1x-gC-bwZ" secondAttribute="top" id="vn7-EM-gPd"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="ifh-qn-FSo" id="u52-w1-x0X"/>
+                                    <outlet property="delegate" destination="ifh-qn-FSo" id="o1V-eY-TNz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fzX-vN-d1A" secondAttribute="trailing" id="C4y-uZ-mi4"/>
+                            <constraint firstItem="fzX-vN-d1A" firstAttribute="top" secondItem="1mt-LX-i4o" secondAttribute="bottom" id="ExA-fS-hgr"/>
+                            <constraint firstItem="fzX-vN-d1A" firstAttribute="leading" secondItem="0BO-3N-U4q" secondAttribute="leadingMargin" id="juO-Ch-k51"/>
+                            <constraint firstItem="MHh-cb-hbj" firstAttribute="top" secondItem="fzX-vN-d1A" secondAttribute="bottom" id="pH8-qN-tqH"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="Tzz-ad-yZS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="lkh-Ov-h2U">
+                            <connections>
+                                <segue destination="8vH-5b-fjP" kind="show" identifier="EditContact" id="3tD-jH-P4c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTitle" destination="HgP-et-blh" id="OR8-5G-7sS"/>
+                        <outlet property="tableView" destination="fzX-vN-d1A" id="9lw-ZG-SMJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGg-4f-I11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101.5999999999999" y="160.56971514242881"/>
+        </scene>
+        <!--Add Contact-->
+        <scene sceneID="2Pz-qj-777">
+            <objects>
+                <viewController id="8vH-5b-fjP" customClass="EditContactViewController" customModule="SampleApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jOm-42-U7U"/>
+                        <viewControllerLayoutGuide type="bottom" id="qF8-Yr-yUG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MsT-wf-Lv2">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IMu-J7-JPN">
+                                <rect key="frame" x="16" y="0.0" width="343" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8vH-5b-fjP" id="tsc-ZR-dH7"/>
+                                    <outlet property="delegate" destination="8vH-5b-fjP" id="E7Z-SF-Md5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IMu-J7-JPN" firstAttribute="top" secondItem="jOm-42-U7U" secondAttribute="bottom" id="Ajz-FG-p6j"/>
+                            <constraint firstItem="qF8-Yr-yUG" firstAttribute="top" secondItem="IMu-J7-JPN" secondAttribute="bottom" id="DGq-wR-iUE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IMu-J7-JPN" secondAttribute="trailing" id="RtF-fP-JLz"/>
+                            <constraint firstItem="IMu-J7-JPN" firstAttribute="leading" secondItem="MsT-wf-Lv2" secondAttribute="leadingMargin" id="rgv-ci-Z4S"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Add Contact" id="0ET-db-SAO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="C1s-a4-UOH">
+                            <connections>
+                                <action selector="trashButtonActionWithSender:" destination="8vH-5b-fjP" id="VcY-oB-zIR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="IMu-J7-JPN" id="ad0-AP-H8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3f-5W-tHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="927"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MCr-KP-B4w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aTS-YE-TxC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q8Q-Wc-WfY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tsM-WZ-S20" kind="relationship" relationship="rootViewController" id="XQz-dW-caw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y35-jf-VNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597.60000000000002" y="161.46926536731635"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JeO-Mv-m7M"/>
+    </inferredMetricsTieBreakers>
+</document>

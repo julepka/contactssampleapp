@@ -1,0 +1,107 @@
+[
+    {
+        "contactID":"001",
+        "firstName":"Anna",
+        "lastName":"Red",
+        "phoneNumber":"(837) 724-7392",
+        "streetAddress1":"24 Mulby Road",
+        "streetAddress2":"Apt #2356",
+        "city":"Los Altos",
+        "state":"CA",
+        "zipCode":"95733"
+    },
+    {
+        "contactID":"002",
+        "firstName":"Bella",
+        "lastName":"White",
+        "phoneNumber":"(837) 743-1111",
+        "streetAddress1":"1144 Alameda Way",
+        "streetAddress2":"Apt #2",
+        "city":"Los Altos",
+        "state":"CA",
+        "zipCode":"95799"
+    },
+    {
+         "contactID":"003",
+         "firstName":"Camilla",
+         "lastName":"Orange",
+         "phoneNumber":"(408) 743-7611",
+         "streetAddress1":"34 Alameda Way",
+         "streetAddress2":"Apt #3",
+         "city":"Los Altos",
+         "state":"CA",
+         "zipCode":"95799"
+    },
+    {
+         "contactID":"004",
+         "firstName":"Deborah",
+         "lastName":"Grey",
+         "phoneNumber":"(791) 424-9264",
+         "streetAddress1":"212 Lester Ave",
+         "streetAddress2":"",
+         "city":"Mountain View",
+         "state":"CA",
+         "zipCode":"92654"
+    },
+    {
+         "contactID":"005",
+         "firstName":"Emily",
+         "lastName":"Yellow",
+         "phoneNumber":"(431) 591-1739",
+         "streetAddress1":"210 Lester Ave",
+         "streetAddress2":"",
+         "city":"Mountain View",
+         "state":"CA",
+         "zipCode":"92654"
+    },
+    {
+         "contactID":"006",
+         "firstName":"Franchesca",
+         "lastName":"Black",
+         "phoneNumber":"(837) 743-0007",
+         "streetAddress1":"205 Foxter Way",
+         "streetAddress2":"",
+         "city":"Boston",
+         "state":"MA",
+         "zipCode":"02130"
+    },
+    {
+         "contactID":"007",
+         "firstName":"Gina",
+         "lastName":"Green",
+         "phoneNumber":"(555) 555-1111",
+         "streetAddress1":"145 Boolkin Ave",
+         "streetAddress2":"Suit 204",
+         "city":"Boston",
+         "state":"MA",
+         "zipCode":"02134"
+    },
+    {
+         "contactID":"008",
+         "firstName":"Helga",
+         "lastName":"Pink",
+         "phoneNumber":"(555) 123-4567",
+         "streetAddress1":"964 Guada Street",
+         "streetAddress2":"Suit 44",
+         "city":"Boston",
+         "state":"MA",
+         "zipCode":"02643"
+    },
+    {
+         "contactID":"009",
+         "firstName":"Iris",
+         "lastName":"Blue",
+         "phoneNumber":"(444) 829-6640",
+         "streetAddress1":"",
+         "streetAddress2":"",
+         "city":"",
+         "state":"",
+         "zipCode":""
+    },
+    {
+         "contactID":"010",
+         "firstName":"Juliette",
+         "lastName":"Purple",
+         "phoneNumber":"(777) 547-7732"
+    }
+]
